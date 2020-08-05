@@ -15,6 +15,7 @@ services:
     image: docker.elastic.co/elasticsearch/elasticsearch-oss:6.8.2
     ports:
       - "9200:9200"
+      - "9300:9300"
     environment:
       - discovery.type=single-node
       - ingress=[{"type":"append"},{"type":"bytes"},{"type":"convert"},{"type":"date"},{"type":"date_index_name"},{"type":"dissect"},{"type":"dot_expander"},{"type":"drop"},{"type":"fail"},{"type":"foreach"},{"type":"geoip"},{"type":"grok"},{"type":"gsub"},{"type":"join"},{"type":"json"},{"type":"kv"},{"type":"lowercase"},{"type":"pipeline"},{"type":"remove"},{"type":"rename"},{"type":"script"},{"type":"set"},{"type":"sort"},{"type":"split"},{"type":"trim"},{"type":"uppercase"},{"type":"urldecode"},{"type":"user_agent"}]
