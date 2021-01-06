@@ -1,4 +1,4 @@
-\w eetay
+\w eetayauto
 CREATE EXTENSION pg_cron;
-GRANT USAGE ON SCHEMA cron TO eetay;
+GRANT USAGE ON SCHEMA cron TO eetayauto;
 
